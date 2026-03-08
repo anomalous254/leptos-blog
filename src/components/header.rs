@@ -1,5 +1,7 @@
 use leptos::prelude::*;
 use super::ui::FastA;
+use icons::{Github};
+use leptos_router::components::A;
 
 
 /// Header component for navigation between pages
@@ -23,7 +25,11 @@ pub fn Header() -> impl IntoView{
                         <FastA href="/contacts">"Contacts"</FastA>
                     </li>
                 </ul>
-            </nav>
+
+                 <div class="icons_github">
+                  <A  href="https://github.com/anomalous254" target="_blank"> <Github /></A>
+               </div>
+            </nav> 
         </header>
     }
    
