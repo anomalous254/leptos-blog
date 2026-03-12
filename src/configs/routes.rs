@@ -5,6 +5,41 @@ use crate::layouts::dashboard::Dashboard;
 use crate::pages::{home::HomePage};
 use crate::components::markdown::Markdown;
 
+
+
+use leptos_router::hooks::use_params;
+use leptos_router::params::Params;
+
+/// Define the params structure to match the `:slug` in your route
+#[derive(Params, PartialEq)]
+struct BlogParams {
+    slug: Option<String>,
+}
+
+#[component]
+pub fn TestSlug() -> impl IntoView {
+    // Grab the params from the route
+    let params = use_params::<BlogParams>();
+
+    // Create a memo that reads the slug safely
+    let slug = move || {
+        params
+            .read()
+            .as_ref()
+            .ok()
+            .and_then(|p| p.slug.clone())
+            .unwrap_or_else(|| "no-slug".to_string())
+    };
+
+    // Display the slug
+    view! {
+        <div>
+            <h1>"Testing slug parameter"</h1>
+            <p>"Slug: " {slug}</p>
+        </div>
+    }
+}
+
 #[component]
 pub fn AppRoutes() -> impl IntoView {
     view! {
@@ -13,6 +48,7 @@ pub fn AppRoutes() -> impl IntoView {
                 <ParentRoute path=path!("/") view=Dashboard>
                     <Route path=path!("/") view=HomePage />
                     <Route path=path!("/about") view=Markdown />
+                    <Route path=path!("/blog/:slug") view=TestSlug />
                 </ParentRoute>
             </Routes>
         </Router>

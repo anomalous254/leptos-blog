@@ -1,12 +1,9 @@
-/* ============================
-   Markdown Component Styles
-   ============================ */
 .md {
-  background-color: #2a2a2a; /* Dark background */
+  background-color: #191918; /* Dark background */
   color: #e0e0e0;            /* Light text */
   padding: 1.5rem;
+  border: .1px solid  #393835;
   border-radius: 8px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
   overflow-x: auto;
 }
@@ -53,10 +50,9 @@
 
 /* Inline code */
 .md code {
-  background-color: #333;
+  background-color: #393835;
   padding: 0.2em 0.4em;
-  border-radius: 4px;
-  font-family: 'Fira Code', monospace;
+  border-radius: 4px; 
 }
 
 /* Prism.js code blocks (syntax highlighting) */

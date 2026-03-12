@@ -84,15 +84,12 @@
   width: 90px;
 }
 
-/* ============================
-   Markdown Component Styles
-   ============================ */
 .md {
-  background-color: #2a2a2a; /* Dark background */
+  background-color: #191918; /* Dark background */
   color: #e0e0e0; /* Light text */
   padding: 1.5rem;
+  border: 0.1px solid #393835;
   border-radius: 8px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
   overflow-x: auto;
 }
@@ -170,10 +167,9 @@
 
 /* Inline code */
 .md code {
-  background-color: #333;
+  background-color: #393835;
   padding: 0.2em 0.4em;
   border-radius: 4px;
-  font-family: "Fira Code", monospace;
 }
 
 /* Prism.js code blocks (syntax highlighting) */
@@ -205,6 +201,19 @@
   max-width: 100%;
   border-radius: 6px;
   margin: 1em 0;
+}
+
+.blog-lists {
+  padding: 1em;
+}
+.blog-lists li {
+  color: #ce570e;
+  line-height: 2;
+  font-size: 1rem;
+}
+.blog-lists li a {
+  color: #ce570e;
+  text-decoration: none;
 }
 
 * {
@@ -280,3 +289,5 @@ header nav ul a {
 .nav-link.active {
   color: #fafafa;
 }
+
+/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%22../../styles/globals.scss%22,%22../../styles/_card.scss%22,%22../../styles/_user_info.scss%22,%22../../styles/_markdown.scss%22,%22../../styles/_homepage.scss%22%5D,%22names%22:%5B%5D,%22mappings%22:%22AAIQ;ACJR;EACE;EACA;EACA;EACA;;AAEA;EACE;EACA;EACA;;AAGF;EACE;;;ACbJ;EACE;EACA;EACA;EACA;;AAEA;EACE;EACA;EACA;;AAEA;EACE;EACA;EACA;EACA;EACA;EACA;EACA;;AAEA;EACE;EACA;;AAGF;EACE;EACA;EACA;EACA;EACA;EACA;;AAEA;EACE;EACA;EACA;EACA;EACA;EACA;;AAMR;EACG;EACC;EACA;EACA;EACA;EACA;EACA;;AAEA;EACE;EACA;EACA;EACA;EACA;;AAGA;EACE;EACA;EACA;EACA;EACA;EACA;EACA;;AAMR;EACE;EACA;;;AC7EJ;EACE;EACA;EACA;EACA;EACA;EACA;EACA;;;AAGF;AACA;EAAS;EAAkB;EAAsB;;;AACjD;EAAS;EAAkB;EAAsB;;;AACjD;EAAS;EAAkB;EAAsB;;;AACjD;EAAS;EAAkB;EAAsB;;;AACjD;EAAS;EAAkB;EAAsB;;;AACjD;EAAS;EAAgB;EAAsB;;;AAE/C;AACA;EACE;;;AAGF;AACA;EACE;EACA;;;AAEF;EACE;;;AAGF;AACA;EACE;EACA;;;AAEF;EACE;;;AAGF;AACA;EACE;EACA;EACA;EACA;EACA;;;AAGF;AACA;EACE;EACA;EACA;;;AAGF;AACA;EACE;EACA;;;AAGF;AACA;EACE;EACA;EACA;EACA;EACA;EACA;EACA;;;AAGF;AACA;EACE;EACA;EACA;;;AAGF;AACA;EACE;EACA;EACA;;;ACrFF;EACE;;AAEA;EACE;EACA;EACA;;AAEA;EACE;EACA;;;AJHN;EACE;EACA;EACA;EACA;EACA;EACA;EACA;;;AAGF;EACE;;;AAGF;EACE;;;AAGF;EACE;EACA;;;AAGF;EACE;EACA;;;AAIF;EACE;EACA;EACA;EACA;;AAEA;EACE;EACA;EACA;EACA;EACA;;AAGF;EACE;EACA;EACA;;AACA;EACE;;AAGD;EACE;EACA;;AAIH;EACE;EACC;EACA;EACA;EACD;;AAEA;EACE;EACA;EACA;;;AAaR;EACE;;;AAIF;EACE%22,%22file%22:%22globals.css%22%7D */
