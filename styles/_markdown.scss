@@ -1,0 +1,91 @@
+/* ============================
+   Markdown Component Styles
+   ============================ */
+.md {
+  background-color: #2a2a2a; /* Dark background */
+  color: #e0e0e0;            /* Light text */
+  padding: 1.5rem;
+  border-radius: 8px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  overflow-x: auto;
+}
+
+/* Headings */
+.md h1 { font-size: 2.2em; margin-bottom: 0.6em; color: #ffa500; }
+.md h2 { font-size: 1.8em; margin-bottom: 0.5em; color: #ffb84d; }
+.md h3 { font-size: 1.5em; margin-bottom: 0.5em; color: #ffd580; }
+.md h4 { font-size: 1.3em; margin-bottom: 0.5em; color: #fff080; }
+.md h5 { font-size: 1.1em; margin-bottom: 0.5em; color: #ffff80; }
+.md h6 { font-size: 1em; margin-bottom: 0.5em; color: #d0ff80; }
+
+/* Paragraphs */
+.md p {
+  margin-bottom: 1em;
+}
+
+/* Links */
+.md a {
+  color: #61dafb;
+  text-decoration: underline;
+}
+.md a:hover {
+  text-decoration: none;
+}
+
+/* Lists */
+.md ul, .md ol {
+  margin-left: 1.5em;
+  margin-bottom: 1em;
+}
+.md li {
+  margin-bottom: 0.4em;
+}
+
+/* Code blocks */
+.md pre {
+  background-color: #1e1e1e;
+  padding: 1rem;
+  border-radius: 6px;
+  overflow-x: auto;
+  margin-bottom: 1em;
+}
+
+/* Inline code */
+.md code {
+  background-color: #333;
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  font-family: 'Fira Code', monospace;
+}
+
+/* Prism.js code blocks (syntax highlighting) */
+.md code[class*="language-"] {
+  display: block;
+  color: inherit; /* Prism will override colors */
+}
+
+/* Blockquotes */
+.md blockquote {
+  border-left: 4px solid #61dafb;
+  padding-left: 1em;
+  color: #cfcfcf;
+  font-style: italic;
+  margin: 1em 0;
+  background-color: #2e2e2e;
+  border-radius: 4px;
+}
+
+/* Horizontal rules */
+.md hr {
+  border: 0;
+  border-top: 1px solid #444;
+  margin: 2em 0;
+}
+
+/* Images */
+.md img {
+  max-width: 100%;
+  border-radius: 6px;
+  margin: 1em 0;
+}

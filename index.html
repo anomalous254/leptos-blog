@@ -3,15 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- Trunk -->
   <link data-trunk rel="rust" />
   <link data-trunk rel="scss" href="styles/globals.scss" />
-  <link data-trunk rel="copy-dir" href="assets/img" data-target-path="assets/img" />
+  <link data-trunk rel="copy-dir" href="assets/img" data-target-path="assets/img" /> 
+
+  <!-- Prism.js dark theme CSS -->
+  <link
+  href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism-tomorrow.min.css"
+  rel="stylesheet"
+/>
+
+  <!-- Remix icons -->
   <link
     href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
     rel="stylesheet"
-/>
+  />
+
   <title>@nyando</title>
 </head>
 <body>
+  <div id="root"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-core.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
 </body>
 </html>

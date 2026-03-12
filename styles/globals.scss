@@ -1,5 +1,6 @@
 @use "card";
 @use "user_info";
+@use "markdown";
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
 
 
@@ -31,11 +32,6 @@ main{
   margin: 2rem auto;
 }
 
-.md{
-  background-color: #2a2a2a;
-  color: white;
-  padding: 1rem;
-}
 
 header{  
   background-color: #111110;
@@ -84,10 +80,7 @@ header{
 }
 
 
-code{
-  background-color: #505050;
-  color: #ecb437;
-}
+
 
 
 
