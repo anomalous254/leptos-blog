@@ -1,6 +1,16 @@
 .card{
-  background-color: #191918;
-  padding: 2em;
+  background-color: #191918; 
   border: .1px solid  #393835;;
   border-radius: .4em;
+  color: #fafafa;
+
+  .card-title{
+    border-bottom: .1px solid  #393835;
+    padding: 1em;
+    background-color: #1e1e1d;
+  }
+
+  .card-content{
+    padding: 1em;
+  }
 }

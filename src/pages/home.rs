@@ -5,9 +5,9 @@ use crate::components::ui::Card;
 #[component]
 pub fn HomePage() -> impl IntoView{
     view! {
-        <Card>
+        <Card  title="HomePage">
 
-            <h1>"Test"</h1>
+            <h1>"List of blog posts."</h1>
 
         </Card>
     }

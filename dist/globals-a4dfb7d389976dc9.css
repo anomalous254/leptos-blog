@@ -1,9 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap");
 .card {
   background-color: #191918;
-  padding: 2em;
   border: 0.1px solid #393835;
   border-radius: 0.4em;
+  color: #fafafa;
+}
+.card .card-title {
+  border-bottom: 0.1px solid #393835;
+  padding: 1em;
+  background-color: #1e1e1d;
+}
+.card .card-content {
+  padding: 1em;
 }
 
 .main_user_info {

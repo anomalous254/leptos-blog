@@ -38,7 +38,15 @@ pub fn FastA(
 
 /// Card component, used to warap other components
 #[component]
-pub fn Card(children: Children) -> impl  IntoView{
-    view! { <div class="card">{children()}</div> }
-
+pub fn Card(children: Children, #[prop(into)] title: String  ) -> impl  IntoView{
+    view! { 
+        <div class="card">
+            <div class="card-title">
+              {title}
+            </div>
+            <div class="card-content">
+               {children()}
+            </div>
+        </div> 
+    }
 }
