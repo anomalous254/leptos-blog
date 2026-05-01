@@ -44,7 +44,7 @@ pub fn TestSlug() -> impl IntoView {
 pub fn AppRoutes() -> impl IntoView {
     view! {
         <Router>
-            <Routes fallback=|| view! { <p>"Not found"</p> }>
+            <Routes fallback=|| view! { <div class="page-not-found"> <p>"Page not found"</p></div> }>
                 <ParentRoute path=path!("/") view=Dashboard>
                     <Route path=path!("/") view=HomePage />
                     <Route path=path!("/about") view=Markdown />

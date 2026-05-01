@@ -24,6 +24,9 @@ pub fn Header() -> impl IntoView{
                     <li>
                         <FastA href="/contacts">"Contacts"</FastA>
                     </li>
+                     <li>
+                        <FastA href="/philosophy">"Philosophy"</FastA>
+                    </li>
                 </ul>
 
                  <div class="icons_github">
