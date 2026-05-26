@@ -1,7 +1,7 @@
-use leptos::prelude::*;
 use crate::components::ui::Card;
-use std::collections::HashMap;
 use crate::components::ui::FastA;
+use leptos::prelude::*;
+use std::collections::HashMap;
 
 #[component]
 pub fn HomePage() -> impl IntoView {
@@ -9,12 +9,9 @@ pub fn HomePage() -> impl IntoView {
     let mut blog_posts: HashMap<String, &str> = HashMap::new();
     blog_posts.insert(
         "How to create a middleware in Actix-Web".to_string(),
-        "/blog/index",
+        "/blog/rust",
     );
-    blog_posts.insert(
-        "Getting started with Leptos".to_string(),
-        "/blog/middleware",
-    );
+    blog_posts.insert("Getting started with Leptos".to_string(), "/blog/leptos");
     blog_posts.insert(
         "Deploying Rust apps to Vercel".to_string(),
         "/blog/vercel_deploy.md",
@@ -40,4 +37,3 @@ pub fn HomePage() -> impl IntoView {
         </Card>
     }
 }
-
