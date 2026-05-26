@@ -1,12 +1,11 @@
-use leptos::prelude::*;
 use super::ui::FastA;
-use icons::{Github};
+use icons::Github;
+use leptos::prelude::*;
 use leptos_router::components::A;
-
 
 /// Header component for navigation between pages
 #[component]
-pub fn Header() -> impl IntoView{
+pub fn Header() -> impl IntoView {
     view! {
         <header>
             <nav>
@@ -32,8 +31,8 @@ pub fn Header() -> impl IntoView{
                  <div class="icons_github">
                   <A  href="https://github.com/anomalous254" target="_blank"> <Github /></A>
                </div>
-            </nav> 
+            </nav>
         </header>
     }
-   
 }
+

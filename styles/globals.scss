@@ -98,3 +98,96 @@ header{
 .nav-link.active {
   color: #fafafa;
 }
+
+
+
+
+header {
+  background-color: #111110;
+  color: white;
+  padding: 0.9em 0;
+  border-bottom: 0.1px solid #393835;
+
+  nav {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    position: relative;
+  }
+
+  .logo {
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+
+  ul {
+    flex: 1;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    margin-left: 2rem;
+
+    a {
+      color: #96969f;
+      text-decoration: none;
+      font-size: 0.9em;
+
+      &:hover {
+        color: white;
+      }
+    }
+  }
+
+  .icons_github {
+    a {
+      text-decoration: none;
+      color: #fafafa;
+    }
+  }
+
+  .menu-btn {
+    display: none;
+    background: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 1.5rem;
+  }
+
+  // MOBILE
+  @media (max-width: 768px) {
+    .menu-btn {
+      display: block;
+    }
+
+    ul {
+      position: absolute;
+      top: 70px;
+      left: 0;
+      right: 0;
+      background: #111110;
+
+      flex-direction: column;
+      align-items: flex-start;
+
+      padding: 1rem;
+      gap: 1rem;
+      margin-left: 0;
+
+      display: none;
+      border-bottom: 1px solid #393835;
+    }
+
+    ul.open {
+      display: flex;
+    }
+
+    .icons_github {
+      display: none;
+    }
+  }
+}

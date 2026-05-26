@@ -1,6 +1,7 @@
 .main_user_info {
   margin-bottom: 2em;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 
@@ -8,6 +9,7 @@
     display: flex;
     align-items: center; // vertically centers content
     gap: 1.5em;
+    flex-wrap: wrap;
 
     .my_info { 
       color: #fafafa;
