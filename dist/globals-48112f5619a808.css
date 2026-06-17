@@ -1,0 +1,271 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap");
+.card {
+  background-color: #191918;
+  border: 0.1px solid #393835;
+  border-radius: 0.4em;
+  color: #fafafa;
+}
+.card .card-title {
+  border-bottom: 0.1px solid #393835;
+  padding: 1em;
+  background-color: #1e1e1d;
+  border-top-left-radius: 0.4em;
+  border-top-right-radius: 0.4em;
+}
+.card .card-content {
+  padding: 1em;
+}
+
+.main_user_info {
+  margin-bottom: 2em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.main_user_info .info_left {
+  display: flex;
+  align-items: center;
+  gap: 1.5em;
+  flex-wrap: wrap;
+}
+.main_user_info .info_left .my_info {
+  color: #fafafa;
+  border-left: 1px solid #393835;
+  padding-left: 0.8em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+.main_user_info .info_left .my_info h2 {
+  font-size: 1.7rem;
+  padding-bottom: 0.8em;
+}
+.main_user_info .info_left .my_info .hashtags {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 0.6em;
+  margin-top: 1em;
+  flex-wrap: wrap;
+}
+.main_user_info .info_left .my_info .hashtags li {
+  border: 0.1px solid #393835;
+  padding: 0.3em 0.6em 0.3em 0.6em;
+  font-size: 0.8em;
+  border-radius: 0.3em;
+  background-color: #191918;
+  color: #d5d5d5;
+}
+.main_user_info .info_right {
+  color: #fafafa;
+  border-left: 1px solid #393835;
+  padding-left: 0.8em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+.main_user_info .info_right .info_links {
+  list-style: none;
+  display: flex;
+  gap: 1em;
+  flex-direction: column;
+  margin: 1.3em 0;
+}
+.main_user_info .info_right .info_links li {
+  border: 0.1px solid #393835;
+  padding: 0.3em 0.6em 0.3em 0.6em;
+  font-size: 1em;
+  border-radius: 0.3em;
+  background-color: #191918;
+  color: #d5d5d5;
+  width: 100%;
+}
+.main_user_info img {
+  height: 90px;
+  width: 90px;
+}
+
+.welcome-card {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 1.2rem;
+  background: #f5f5f3;
+  color: #1f1f1f;
+}
+
+/* HEADER */
+.welcome-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2.1rem;
+  text-align: center;
+  flex-wrap: wrap; /* important for mobile */
+}
+
+/* TAGLINE */
+.welcome-tagline {
+  font-family: "Caveat", cursive;
+  font-size: clamp(1.2rem, 2vw, 1.4rem);
+  font-weight: 600;
+  color: #111;
+}
+
+/* IMAGE */
+.profile-img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+}
+
+/* CONTENT */
+.welcome-content {
+  text-align: center;
+  max-width: 720px;
+  width: 100%;
+  padding: 0 1rem;
+}
+
+.welcome-content h1 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  font-weight: 800;
+  color: #4ca07f;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  font-family: "Cormorant Garamond", serif;
+  font-style: italic;
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+  color: #333;
+  margin-bottom: 2.2rem;
+}
+
+/* BUTTON */
+.download-btn {
+  display: inline-block;
+  text-decoration: none;
+  width: 100%;
+  max-width: 390px;
+  padding: 0.65rem 0.9rem;
+  background: #075b51;
+  color: white;
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(1.1rem, 2vw, 1.4rem);
+  transition: all 0.25s ease;
+}
+
+.download-btn:hover {
+  background: #0a6e61;
+  transform: translateY(-2px);
+}
+
+/* FOOTER */
+.version {
+  font-size: 0.8rem;
+  margin-top: 1.5rem;
+  font-family: "Cormorant Garamond", serif;
+  font-style: italic;
+  color: #555;
+}
+
+.version a {
+  font-size: 0.6rem;
+  color: #075b51;
+  text-decoration: underline;
+  font-weight: 600;
+  transition: 0.2s ease;
+}
+
+.version a:hover {
+  color: #0a6e61;
+}
+
+/* 📱 MOBILE FIXES */
+@media (max-width: 600px) {
+  .welcome-header {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+  .profile-img {
+    width: 64px;
+    height: 64px;
+  }
+  .welcome-card {
+    padding-top: 2rem;
+  }
+  .download-btn {
+    font-size: 1.1rem;
+  }
+}
+.bottom-nav {
+  margin-top: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 1em;
+  gap: 1.5em;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.bottom-nav a {
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: #d33847;
+}
+
+.cloud-svg {
+  opacity: 0.75;
+  pointer-events: none;
+  /* two animations at once */
+  animation: drift var(--drift-duration) linear infinite, bob var(--bob-duration) ease-in-out infinite alternate;
+}
+
+@keyframes drift {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(var(--drift-distance));
+  }
+}
+@keyframes bob {
+  from {
+    margin-top: 0;
+  }
+  to {
+    margin-top: -12px;
+  }
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%22../../styles/globals.scss%22,%22../../styles/_card.scss%22,%22../../styles/_user_info.scss%22,%22../../styles/_welcomecard.scss%22%5D,%22names%22:%5B%5D,%22mappings%22:%22;AAKQ;ACLR;EACE;EACA;EACA;EACA;;AAEA;EACE;EACA;EACA;EACA;EACA;;AAGF;EACE;;;ACfJ;EACE;EACA;EACA;EACA;EACA;;AAEA;EACE;EACA;EACA;EACA;;AAEA;EACE;EACA;EACA;EACA;EACA;EACA;EACA;;AAEA;EACE;EACA;;AAGF;EACE;EACA;EACA;EACA;EACA;EACA;;AAEA;EACE;EACA;EACA;EACA;EACA;EACA;;AAMR;EACG;EACC;EACA;EACA;EACA;EACA;EACA;;AAEA;EACE;EACA;EACA;EACA;EACA;;AAGA;EACE;EACA;EACA;EACA;EACA;EACA;EACA;;AAMR;EACE;EACA;;;AC/EJ;EACI;EACA;EAEA;EACA;EACA;EAEA;EAEA;EACA;;;AAGJ;AACA;EACI;EACA;EACA;EACA;EAEA;EACA;EACA;;;AAGJ;AACA;EACI;EACA;EACA;EACA;;;AAGJ;AACA;EACI;EACA;EAEA;EACA;EAEA;EACA;;;AAGJ;AACA;EACI;EACA;EACA;EACA;;;AAGJ;EACI;EACA;EACA;EAEA;EACA;;;AAGJ;EACI;EACA;EAEA;EAEA;EACA;;;AAGJ;AACA;EACI;EACA;EAEA;EACA;EAEA;EAEA;EACA;EAEA;EACA;EAEA;;;AAGJ;EACI;EACA;;;AAGJ;AACA;EACI;EACA;EAEA;EACA;EACA;;;AAGJ;EACI;EACA;EACA;EACA;EAEA;;;AAGJ;EACI;;;AAGJ;AACA;EAEI;IACI;IACA;;EAGJ;IACI;IACA;;EAGJ;IACI;;EAGJ;IACI;;;AAMR;EACC;EACD;EACA;EACE;EACA;EACA;EACA;;;AAIF;EACE;EACA;EACA;;;AHtJF;EACE;EACA;EACA;EACA;EACA;EACA;EACA;;;AAGF;EACE;;;AAGF;EACE;;;AAUF;EAEI;EACA;AAEA;EACA,WACI;;;AAIR;EACI;IACI;;EAEJ;IACI;;;AAIR;EACI;IACI;;EAEJ;IACI%22,%22file%22:%22globals.css%22%7D */

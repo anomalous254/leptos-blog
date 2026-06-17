@@ -1,3 +1,4 @@
-pub mod header;
-pub mod markdown;
 pub mod ui;
+pub mod welcome;
+
+pub use welcome::WelcomeCard;

@@ -1,5 +1,5 @@
 [package]
-name = "leptos-tutorial"
+name = "my_blog"
 version = "0.1.0"
 edition = "2024"
 
@@ -10,3 +10,12 @@ leptos = { version = "0.8.16", features = ["csr"] }
 leptos-remix-icon = "1.0.3"
 leptos_router = "0.8.12"
 
+
+
+[lib]
+name = "my_blog"
+path = "src/lib.rs"
+
+[[bin]]
+name ="my_blog"
+path = "src/bin/main.rs"

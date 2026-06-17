@@ -1,0 +1,160 @@
+.welcome-card {
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 3rem 1.2rem;
+
+    background: #f5f5f3;
+    color: #1f1f1f;
+}
+
+/* HEADER */
+.welcome-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+    margin-bottom: 2.1rem;
+    text-align: center;
+    flex-wrap: wrap; /* important for mobile */
+}
+
+/* TAGLINE */
+.welcome-tagline {
+    font-family: "Caveat", cursive;
+    font-size: clamp(1.2rem, 2vw, 1.4rem);
+    font-weight: 600;
+    color: #111;
+}
+
+/* IMAGE */
+.profile-img {
+    width: 70px;
+    height: 70px;
+
+    border-radius: 50%;
+    object-fit: cover;
+
+    border: 2px solid rgba(0,0,0,0.08);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.08);
+}
+
+/* CONTENT */
+.welcome-content {
+    text-align: center;
+    max-width: 720px;
+    width: 100%;
+    padding: 0 1rem;
+}
+
+.welcome-content h1 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+    font-weight: 800;
+
+    color: #4ca07f;
+    margin-bottom: 1rem;
+}
+
+.subtitle {
+    font-family: "Cormorant Garamond", serif;
+    font-style: italic;
+
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
+
+    color: #333;
+    margin-bottom: 2.2rem;
+}
+
+/* BUTTON */
+.download-btn {
+    display: inline-block;
+    text-decoration: none;
+
+    width: 100%;
+    max-width: 390px;
+
+    padding: 0.65rem .9rem;
+
+    background: #075b51;
+    color: white;
+
+    font-family: "Cormorant Garamond", serif;
+    font-size: clamp(1.1rem, 2vw, 1.4rem);
+
+    transition: all 0.25s ease;
+}
+
+.download-btn:hover {
+    background: #0a6e61;
+    transform: translateY(-2px);
+}
+
+/* FOOTER */
+.version {
+    font-size: 0.8rem;
+    margin-top: 1.5rem;
+
+    font-family: "Cormorant Garamond", serif;
+    font-style: italic;
+    color: #555;
+}
+
+.version a {
+    font-size: 0.6rem;
+    color: #075b51;
+    text-decoration: underline;
+    font-weight: 600;
+
+    transition: 0.2s ease;
+}
+
+.version a:hover {
+    color: #0a6e61;
+}
+
+/* 📱 MOBILE FIXES */
+@media (max-width: 600px) {
+
+    .welcome-header {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+
+    .profile-img {
+        width: 64px;
+        height: 64px;
+    }
+
+    .welcome-card {
+        padding-top: 2rem;
+    }
+
+    .download-btn {
+        font-size: 1.1rem;
+    }
+}
+
+
+
+.bottom-nav {
+ margin-top: 2em; 
+display: flex;
+justify-content: center;
+  align-items: center;
+  padding-bottom: 1em;
+  gap: 1.5em;
+  border-bottom: 1px solid #e5e5e5;
+ 
+}
+
+.bottom-nav a {
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+}

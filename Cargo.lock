@@ -1319,17 +1319,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "leptos-tutorial"
-version = "0.1.0"
-dependencies = [
- "comrak",
- "icons",
- "leptos 0.8.16",
- "leptos-remix-icon",
- "leptos_router",
-]
-
-[[package]]
 name = "leptos_config"
 version = "0.6.15"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1684,6 +1673,17 @@ checksum = "1fa76a2c86f704bdb222d66965fb3d63269ce38518b83cb0575fca855ebb6316"
 dependencies = [
  "adler2",
  "simd-adler32",
+]
+
+[[package]]
+name = "my_blog"
+version = "0.1.0"
+dependencies = [
+ "comrak",
+ "icons",
+ "leptos 0.8.16",
+ "leptos-remix-icon",
+ "leptos_router",
 ]
 
 [[package]]
