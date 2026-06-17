@@ -1,0 +1,17 @@
+.header-nav {
+ margin-top: 2em; 
+  margin-bottom: .9rem;
+display: flex;
+justify-content: center;
+  align-items: center;
+  padding-bottom: 1em;
+  gap: 1.5em;
+  border-bottom: 1px solid #e5e5e5;
+ 
+}
+
+.header-nav a {
+  text-decoration: none;
+  color: #333;
+  font-size: .8em;
+}

@@ -1,15 +1,12 @@
 use leptos::prelude::*;
+use crate::components::Header;
 
 #[component]
 pub fn WelcomeCard() -> impl IntoView {
     view! {
         <section class="welcome-card">
 
-            <nav class="bottom-nav">
-                <a href="#">Articles</a>
-                <a href="#">Projects</a>
-                <a href="#">About</a>
-            </nav>
+            <Header />
 
             <div class="welcome-header">
                 <p class="welcome-tagline">"you've landed on @nyando blog site"</p>

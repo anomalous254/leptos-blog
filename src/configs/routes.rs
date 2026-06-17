@@ -1,6 +1,7 @@
 use crate::layouts::dashboard::Dashboard;
-use crate::pages::home::HomePage;
+use crate::pages::{ArticlesPage, NotFound};
 use leptos::prelude::*;
+use crate::components::WelcomeCard;
 use leptos_router::components::*;
 use leptos_router::path;
 
@@ -8,15 +9,10 @@ use leptos_router::path;
 pub fn AppRoutes() -> impl IntoView {
     view! {
         <Router>
-            <Routes fallback=|| {
-                view! {
-                    <div class="page-not-found">
-                        <p>"Page not found"</p>
-                    </div>
-                }
-            }>
+            <Routes fallback=NotFound>
                 <ParentRoute path=path!("/") view=Dashboard>
-                    <Route path=path!("/") view=HomePage />
+                    <Route path=path!("/") view=WelcomeCard />
+                    <Route path=path!("/articles") view=ArticlesPage />
                 </ParentRoute>
             </Routes>
         </Router>
