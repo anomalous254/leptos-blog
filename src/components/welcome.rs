@@ -11,11 +11,7 @@ pub fn WelcomeCard() -> impl IntoView {
             <div class="welcome-header">
                 <p class="welcome-tagline">"you've landed on @nyando blog site"</p>
 
-                <img
-                    class="profile-img"
-                    src="https://nyando.vercel.app/assets/photo-Tj8_3dZl.jpg"
-                    alt="Nyando profile"
-                />
+                <img class="profile-img" src="../../assets/img/me.jpg" alt="Nyando profile" />
             </div>
 
             <div class="welcome-content">
