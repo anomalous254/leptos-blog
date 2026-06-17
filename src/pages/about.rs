@@ -38,7 +38,7 @@ pub fn AboutPage() -> impl IntoView {
 
                     <p>
                         <strong>"Phone:"</strong>
-                        " +254 010 116 7765"
+                        "..."
                     </p>
 
                 </div>

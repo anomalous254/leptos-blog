@@ -39,17 +39,7 @@ pub fn ProjectsPage() -> impl IntoView {
         title: "live_radio",
         path: "https://pypi.org/project/live-radio/0.1.2/",
         desc: "Python library that gets live radio stations stream info by country using pyradios.",
-    },
-    Project {
-        title: "rust-calculator-actix-web",
-        path: "https://github.com/anomalous254/rust-calculator-actix-web",
-        desc: "Simple Rust calculator using Actix Web.",
-    },
-    Project {
-        title: "drf-jwt",
-        path: "https://github.com/anomalous254/drf-jwt",
-        desc: "Django REST Framework starter project with JWT authentication using Djoser.",
-    },
+    }, 
     Project {
         title: "daraja-client",
         path: "https://pypi.org/project/daraja-client/",
@@ -60,11 +50,7 @@ pub fn ProjectsPage() -> impl IntoView {
         path: "https://pypi.org/project/githubapiclient/",
         desc: "Python library for interacting with the GitHub API (repos, commits, PRs, README).",
     },
-    Project {
-        title: "Language Africa",
-        path: "https://www.languageafrica.com/",
-        desc: "A language learning app for African languages built with React, Django, Firebase, and REST APIs.",
-    },
+   
     ];
 
     view! {
