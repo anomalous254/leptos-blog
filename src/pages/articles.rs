@@ -12,10 +12,15 @@ type Articles = Vec<Article>;
 #[component]
 pub fn ArticlesPage() -> impl IntoView {
     let articles: Articles = vec![
-        Article { title: "Simple REST API using actix-web", path: "/articles/api" },
-        Article { title: "Custom Middleware in Djandgo", path: "/articles/django-middleware" },
+         Article { 
+        title: "Making SPA Navigation Faster with mousedown Instead of click", 
+        path: "/articles/fast-spa-navigation-with-mousedown" 
+    },
+        Article { title: "Simple REST API using actix-web", path: "/articles/actix-web-rest-api" },
+        Article { title: "Custom Middleware in Djandgo", path: "/articles/custom-django-middleware" },
     ];
 
+   
     view! {
         <Card title="All Articles">
 
