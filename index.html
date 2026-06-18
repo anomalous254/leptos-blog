@@ -3,20 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
+
   <!-- Trunk -->
   <link data-trunk rel="rust" />
   <link data-trunk rel="scss" href="styles/globals.scss" />
   <link data-trunk rel="copy-dir" href="assets/img" data-target-path="assets/img" /> 
   <link data-trunk rel="copy-dir" href="contents/" data-target-path="contents" />
 
-  <!-- Prism.js dark theme CSS -->
+  <!-- Highlight.js CSS -->
+
   <link
-  href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism-tomorrow.min.css"
-  rel="stylesheet"
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/github-dark.min.css"
 />
 
-<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Cormorant+Garamond:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+
+ 
+
+  <!-- Fonts -->
+  <link 
+    href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Cormorant+Garamond:wght@300;400;500;600&display=swap" 
+    rel="stylesheet"
+  />
 
   <!-- Remix icons -->
   <link
@@ -26,11 +34,20 @@
 
   <title>@nyando</title>
 </head>
+
 <body>
   <div id="root"></div>
 
- 
-    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-rust.min.js"></script>
+  <!-- Highlight.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js"></script>
+
+  <!-- Extra languages -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/languages/go.min.js"></script>
+
+  <script>
+    hljs.highlightAll();
+  </script>
+
+
 </body>
 </html>

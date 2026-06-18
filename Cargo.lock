@@ -1358,6 +1358,7 @@ dependencies = [
  "leptos_router",
  "markdown-frontmatter",
  "serde",
+ "web-sys",
 ]
 
 [[package]]

@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
+
   <!-- Trunk -->
   
 <script type="module">
-import init, * as bindings from '/my_blog-ebf3f7aa83f00fcf.js';
-const wasm = await init({ module_or_path: '/my_blog-ebf3f7aa83f00fcf_bg.wasm' });
+import init, * as bindings from '/my_blog-4f7dd95f72dd63b5.js';
+const wasm = await init({ module_or_path: '/my_blog-4f7dd95f72dd63b5_bg.wasm' });
 
 
 window.wasmBindings = bindings;
@@ -17,17 +17,25 @@ window.wasmBindings = bindings;
 dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
 
 </script>
-  <link rel="stylesheet" href="/globals-bfa7367c60e6bc5a.css" integrity="sha384-ZsUT2pz9evn6Hq+CbYSN+3i9npvj+2W8yodM6+nKp24ADYtXrxvXMiOgVIOaMqse"/>
+  <link rel="stylesheet" href="/globals-852b658d763b64a0.css" integrity="sha384-W1QLi2JLYcfyGZxRW4VTm164ZXPnNYHPmg9RkNCGjTNAHRYeB94JU3TIHtm/pQIO"/>
    
   
 
-  <!-- Prism.js dark theme CSS -->
+  <!-- Highlight.js CSS -->
+
   <link
-  href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism-tomorrow.min.css"
-  rel="stylesheet"
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/github-dark.min.css"
 />
 
-<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Cormorant+Garamond:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+
+ 
+
+  <!-- Fonts -->
+  <link 
+    href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Cormorant+Garamond:wght@300;400;500;600&display=swap" 
+    rel="stylesheet"
+  />
 
   <!-- Remix icons -->
   <link
@@ -36,13 +44,22 @@ dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
   />
 
   <title>@nyando</title>
-<link rel="modulepreload" href="/my_blog-ebf3f7aa83f00fcf.js" crossorigin="anonymous" integrity="sha384-twpnr1s836U1z7PrsLvfl0QAzQkw9h6JXNZz5r7m0bTlfYosEmBVSeRjL1Ffjy9G"><link rel="preload" href="/my_blog-ebf3f7aa83f00fcf_bg.wasm" crossorigin="anonymous" integrity="sha384-D9H+2bv9XxkbCNgCbz+9rxL+I6L7Pvqb15M9zy/ay/RW6h83XTBgutBbUD2Owy1H" as="fetch" type="application/wasm"></head>
+<link rel="modulepreload" href="/my_blog-4f7dd95f72dd63b5.js" crossorigin="anonymous" integrity="sha384-LXzQOzyCrO2r8fm8B9a50IZzKqHtCkKsSkBYXIcEeoVrmhlAjyU00WvV38bwNL5c"><link rel="preload" href="/my_blog-4f7dd95f72dd63b5_bg.wasm" crossorigin="anonymous" integrity="sha384-/I2cxX8xAbqq6GPV1OxyVk4enLuK3aF7iL/n5sPwhArxM+FXECWNaYq36RblKt2J" as="fetch" type="application/wasm"></head>
+
 <body>
   <div id="root"></div>
 
- 
-    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-rust.min.js"></script>
+  <!-- Highlight.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js"></script>
+
+  <!-- Extra languages -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/languages/go.min.js"></script>
+
+  <script>
+    hljs.highlightAll();
+  </script>
+
+
 <script>"use strict";
 
 (function () {

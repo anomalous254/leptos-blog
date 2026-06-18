@@ -10,6 +10,7 @@ leptos = { version = "0.8.16", features = ["csr"] }
 leptos_router = "0.8.12"
 markdown-frontmatter = "0.5.1"
 serde = "1.0.228"
+web-sys = "0.3.102"
 
 
 
