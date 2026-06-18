@@ -1,5 +1,4 @@
-use crate::components::ui::Card;
-use crate::components::ui::FastA;
+use crate::components::{Card, FastA, GifHeader};
 use leptos::prelude::*;
 
 struct Project {
@@ -54,46 +53,53 @@ pub fn ProjectsPage() -> impl IntoView {
     ];
 
     view! {
-        <Card title="Public Projects">
+        <>
 
-            <div class="back-link">
-                <FastA href="/">"← Go Back"</FastA>
-            </div>
+            <GifHeader />
 
-            // About-style intro
-            <div class="about-content">
-                <h2>"Overview"</h2>
+            <Card title="Public Projects">
 
-                <p>
-                    "A collection of open-source tools and production-ready systems "
-                    "built with Rust and modern web technologies."
-                </p>
+                <div class="back-link">
+                    <FastA href="/">"← Go Back"</FastA>
+                </div>
 
-                <p>"Focused on performance, modular architecture, and developer-friendly APIs."</p>
-            </div>
+                // About-style intro
+                <div class="about-content">
+                    <h2>"Overview"</h2>
 
-            // simple stacked list (NOT cards)
-            <div class="project-list">
+                    <p>
+                        "A collection of open-source tools and production-ready systems "
+                        "built with Rust and modern web technologies."
+                    </p>
 
-                {projects
-                    .into_iter()
-                    .map(|project| {
-                        view! {
-                            <div class="project-item">
+                    <p>
+                        "Focused on performance, modular architecture, and developer-friendly APIs."
+                    </p>
+                </div>
 
-                                <FastA href=project.path>
-                                    <div class="project-title">{project.title}</div>
-                                </FastA>
+                // simple stacked list (NOT cards)
+                <div class="project-list">
 
-                                <div class="project-desc">{project.desc}</div>
+                    {projects
+                        .into_iter()
+                        .map(|project| {
+                            view! {
+                                <div class="project-item">
 
-                            </div>
-                        }
-                    })
-                    .collect_view()}
+                                    <FastA href=project.path>
+                                        <div class="project-title">{project.title}</div>
+                                    </FastA>
 
-            </div>
+                                    <div class="project-desc">{project.desc}</div>
 
-        </Card>
+                                </div>
+                            }
+                        })
+                        .collect_view()}
+
+                </div>
+
+            </Card>
+        </>
     }
 }

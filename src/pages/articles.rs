@@ -1,5 +1,4 @@
-use crate::components::ui::Card;
-use crate::components::ui::FastA;
+use crate::components::{Card, GifHeader, FastA};
 use leptos::prelude::*;
 
 struct Article {
@@ -22,26 +21,29 @@ pub fn ArticlesPage() -> impl IntoView {
 
    
     view! {
-        <Card title="All Articles">
+        <div>
+            <GifHeader />
+            <Card title="All Articles">
+                // Go back link
+                <div class="back-link">
+                    <FastA href="/">"← Go Back"</FastA>
+                </div>
 
-            // Go back link
-            <div class="back-link">
-                <FastA href="/">"← Go Back"</FastA>
-            </div>
+                <ul class="article-list">
+                    {articles
+                        .into_iter()
+                        .map(|article| {
+                            view! {
+                                <li class="article-item">
+                                    <FastA href=article.path>{article.title}</FastA>
+                                </li>
+                            }
+                        })
+                        .collect_view()}
+                </ul>
 
-            <ul class="article-list">
-                {articles
-                    .into_iter()
-                    .map(|article| {
-                        view! {
-                            <li class="article-item">
-                                <FastA href=article.path>{article.title}</FastA>
-                            </li>
-                        }
-                    })
-                    .collect_view()}
-            </ul>
+            </Card>
 
-        </Card>
+        </div>
     }
 }

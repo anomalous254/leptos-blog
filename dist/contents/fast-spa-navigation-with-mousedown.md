@@ -46,7 +46,7 @@ Even though only a few milliseconds are saved, the UI feels more responsive beca
 
 ### Creating a Fast Link Component
 
-The following example demonstrates how to implement a custom link component in Rust using Leptos:
+The following example demonstrates how to implement a custom link component in Rust using Leptos
 
 ```rust
 use leptos::prelude::*;
