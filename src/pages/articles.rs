@@ -12,16 +12,8 @@ type Articles = Vec<Article>;
 #[component]
 pub fn ArticlesPage() -> impl IntoView {
     let articles: Articles = vec![
-        Article { title: "Rust Ownership Explained", path: "/articles/rust" },
-        Article { title: "Borrowing in Rust", path: "/articles/borrowing" },
-        Article { title: "Rust Lifetimes Guide", path: "/articles/lifetimes" },
-        Article { title: "Structs and Enums", path: "/articles/structs-enums" },
-        Article { title: "Error Handling in Rust", path: "/articles/error-handling" },
-        Article { title: "Rust Traits Deep Dive", path: "/articles/traits" },
-        Article { title: "Async Rust Basics", path: "/articles/async" },
-        Article { title: "Cargo and Project Structure", path: "/articles/cargo" },
-        Article { title: "Macros in Rust", path: "/articles/macros" },
-        Article { title: "Smart Pointers Explained", path: "/articles/smart-pointers" },
+        Article { title: "Simple REST API using actix-web", path: "/articles/api" },
+        Article { title: "Custom Middleware in Djandgo", path: "/articles/django-middleware" },
     ];
 
     view! {

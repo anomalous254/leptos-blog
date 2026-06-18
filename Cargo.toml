@@ -5,10 +5,8 @@ edition = "2024"
 
 [dependencies]
 comrak = "0.50.0"
-gray_matter = "0.3.2"
-icons = { version = "0.18.0", features = ["leptos"] }
+js-sys = "0.3.102"
 leptos = { version = "0.8.16", features = ["csr"] }
-leptos-remix-icon = "1.0.3"
 leptos_router = "0.8.12"
 markdown-frontmatter = "0.5.1"
 serde = "1.0.228"

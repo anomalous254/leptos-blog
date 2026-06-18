@@ -3,6 +3,7 @@ use leptos_router::hooks::use_params_map;
 use comrak::{markdown_to_html, Options};
 use markdown_frontmatter::parse;
 use serde::Deserialize;
+use js_sys::Date;
 
 use crate::utils::match_markdown_content;
 
@@ -38,6 +39,8 @@ fn load_post(slug: &str) -> Post {
 
 #[component]
 pub fn MarkdownContentPage() -> impl IntoView {
+    let year = Date::new_0().get_full_year();
+    let copyright = format!("© Copyright (c) {} @nayndo. All Rights Reserved. ", year);
     let params = use_params_map();
 
     let slug = params.read().get("slug").unwrap_or_default();
@@ -58,6 +61,12 @@ pub fn MarkdownContentPage() -> impl IntoView {
                 <div inner_html=html class="blog-content" />
 
             </article>
+
+            <p class="version">
+                {copyright} <a href="https://leptos.dev" target="_blank" rel="noopener noreferrer">
+                    "powered by Leptos v0.8.16"
+                </a>
+            </p>
 
         </div>
     }

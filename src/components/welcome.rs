@@ -29,9 +29,8 @@ pub fn WelcomeCard() -> impl IntoView {
                 </a>
 
                 <p class="version">
-                    "Powered by "
                     <a href="https://leptos.dev" target="_blank" rel="noopener noreferrer">
-                        "Leptos v0.8.16"
+                        "Powered by Leptos v0.8.16"
                     </a>
                 </p>
             </div>

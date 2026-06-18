@@ -1,17 +1,9 @@
 ---
-title: "Leptos Test"
+title: "404 , Content Not Found !!!"
 image: "../assets/img/crab.png"
-date: "2026-06-17"
-author: "Syntax"
-description: "Introduction to Leptos"
+date: "..."
+author: "..."
+description: "..."
 ---
 
-# Introduction
-
-This is the content of the article.
-
-```rust
-fn main() {
-    println!("Hello Leptos!");
-}
-```
+> Content not found !!
