@@ -7,8 +7,8 @@
   <!-- Trunk -->
   
 <script type="module">
-import init, * as bindings from '/my_blog-e946fa9f99837110.js';
-const wasm = await init({ module_or_path: '/my_blog-e946fa9f99837110_bg.wasm' });
+import init, * as bindings from '/my_blog-5ea9a6cda00e5010.js';
+const wasm = await init({ module_or_path: '/my_blog-5ea9a6cda00e5010_bg.wasm' });
 
 
 window.wasmBindings = bindings;
@@ -17,7 +17,7 @@ window.wasmBindings = bindings;
 dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
 
 </script>
-  <link rel="stylesheet" href="/globals-46fd7dafea3e6c99.css" integrity="sha384-4okGCKOhoWXSKK++MeXz3RSJ7sFRmsq2CCEkILvOumAivyVSN8xMPBGnIEWOD0+T"/>
+  <link rel="stylesheet" href="/globals-4e3da40bcaccc04e.css" integrity="sha384-t8UO9njm9nlg6Cj1YpYUQcuskEYAGi3CU1nQwyRpViIzLcweKMaisDN3tL09Af/2"/>
    
   
 
@@ -36,12 +36,13 @@ dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
   />
 
   <title>@nyando</title>
-<link rel="modulepreload" href="/my_blog-e946fa9f99837110.js" crossorigin="anonymous" integrity="sha384-+qrpYqqEy45d71T6xtkWBRmuhgx5zzsTUXERMV7xQes27cJ4Ad86/uoZYuV8eIAJ"><link rel="preload" href="/my_blog-e946fa9f99837110_bg.wasm" crossorigin="anonymous" integrity="sha384-N2QUgZ/rhMKMsV1Eh0GNccOLIJV4fpAVr1yi+JAw4KmFgi0rRDZI5Q4ys00H6eIY" as="fetch" type="application/wasm"></head>
+<link rel="modulepreload" href="/my_blog-5ea9a6cda00e5010.js" crossorigin="anonymous" integrity="sha384-ccw20mw5ZcM7YyCOn9B4FiUQuQMlSAybVrlDHFvIjhCA7d3+3c1Tkoz74SLM6ydE"><link rel="preload" href="/my_blog-5ea9a6cda00e5010_bg.wasm" crossorigin="anonymous" integrity="sha384-f3Icc5CzfkoJk2+Eg3E6MOomDk9oKKJFOq9mObH8ffY+NSMbQHdoExzTNu3kdPeY" as="fetch" type="application/wasm"></head>
 <body>
   <div id="root"></div>
 
-  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-core.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
+ 
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-rust.min.js"></script>
 <script>"use strict";
 
 (function () {

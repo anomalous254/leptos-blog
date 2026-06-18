@@ -2,6 +2,7 @@ mod configs;
 mod components;
 mod layouts;
 mod pages;
+mod utils;
 
 
 use configs::app::App;

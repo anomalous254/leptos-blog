@@ -1,6 +1,5 @@
 @use "card";
 @use "user_info";
-@use "markdown";
 @use "homepage";
 @use "welcomecard";
 @use "header";
@@ -8,6 +7,7 @@
 @use "./pages/articles";
 @use "./pages/projects";
 @use "./pages/about";
+@use "./pages/markdown";
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
 
 
@@ -26,11 +26,11 @@ a{
 }
 
 body{
-  background-color: #f5f5f3;
+  background-color: #ffffff;
 }
 
 .outlet-container{
-  max-width: 890px;
+  max-width: 800px;
   margin: 3rem auto;
   padding: .5em;
 }

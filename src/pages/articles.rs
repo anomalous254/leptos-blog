@@ -12,7 +12,7 @@ type Articles = Vec<Article>;
 #[component]
 pub fn ArticlesPage() -> impl IntoView {
     let articles: Articles = vec![
-        Article { title: "Rust Ownership Explained", path: "/articles/ownership" },
+        Article { title: "Rust Ownership Explained", path: "/articles/rust" },
         Article { title: "Borrowing in Rust", path: "/articles/borrowing" },
         Article { title: "Rust Lifetimes Guide", path: "/articles/lifetimes" },
         Article { title: "Structs and Enums", path: "/articles/structs-enums" },
