@@ -1,5 +1,5 @@
 ---
-title: "Making SPA Navigation Feel Faster with mousedown Instead of click"
+title: "Making SPA Navigation Lightning Fast with mousedown Instead of click"
 author: "Peter Nyando"
 date: "June 18, 2026"
 description: "Improve perceived navigation performance in single-page applications by initiating route transitions on mousedown rather than click."
